@@ -1,0 +1,13 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+<h1>Welcome, User!</h1>
+<p>Email: <span th:text="${userEmail}"></span></p>
+<p>Role: <span th:text="${userRole}"></span></p>
+<a href="/logout">Logout</a>
+</body>
+</html>

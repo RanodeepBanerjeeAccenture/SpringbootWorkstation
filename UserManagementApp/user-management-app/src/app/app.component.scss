@@ -1,0 +1,90 @@
+.container {
+  width: 100%;
+  max-width: 500px; // Maximum width for large screens
+  margin: 0 auto;
+  padding-top: 50px;
+  background-color: #f9f9f9; // Light background for the container
+  border-radius: 8px; // Rounded corners
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Subtle shadow effect
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; // Dark text color for better readability
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555; // Lighter text color for labels
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc; // Light border
+  border-radius: 4px; // Rounded edges for inputs
+  transition: border-color 0.3s ease-in-out; // Smooth border color transition on focus
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff; // Blue border when focused
+  outline: none; // Remove default outline
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff; // Blue background color
+  color: #fff; // White text
+  border: none;
+  border-radius: 4px; // Rounded button edges
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; // Darker blue when hovering
+}
+
+button:focus {
+  outline: none; // Remove focus outline
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; // Reduced padding for smaller screens
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%; // More responsive width for very small screens
+  }
+
+  h2 {
+    font-size: 20px; // Smaller header font on small screens
+  }
+
+  input,
+  select {
+    font-size: 12px; // Slightly smaller text for smaller screens
+  }
+
+  button {
+    font-size: 14px; // Smaller button font
+  }
+}
